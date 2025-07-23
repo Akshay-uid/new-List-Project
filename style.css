@@ -4,7 +4,144 @@
     box-sizing: border-box;
 }
 
-body,html {
+body,
+html,
+main {
     height: 100vh;
     width: 100vw;
+}
+
+:root {
+    --primaryColor: #FFEDDF;
+    --secondaryColor: #0D1321;
+    --charcolBlack: #2C2C2C;
+    --mindaro: #b7de56;
+    --rose: #86615C;
+    --lion: #9E8E63;
+    --hover: #958e5f67;
+}
+
+main {
+    background-color: var(--primaryColor);
+}
+
+main header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--charcolBlack);
+    padding: 0.5rem 2rem;
+}
+
+header .mainColor {
+    width: 30%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+    display: flex;
+}
+
+.mainColor .colors {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    padding: 0rem 0.7rem;
+}
+
+.ch1 {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: var(--secondaryColor);
+}
+
+.colors:hover {
+    background-color: var(--hover);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.colors:hover .child {
+    transform: scale(0.9);
+}
+
+.ch2 {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: var(--rose);
+}
+
+.ch3 {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: var(--mindaro);
+}
+
+.ch4 {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: var(--lion);
+}
+
+.addCard {
+    height: 90%;
+    width: 10%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primaryColor);
+}
+
+.Cards {
+    height: 100%;
+    width: 50%;
+    padding: 0rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.addCard button {
+    font-size: 1.7rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    /* padding: 0rem 0.7rem; */
+    transition: transform 0.3s ease;
+}
+
+.add{
+    transform: scale(1.5);
+}
+.delete{
+    font-weight:500 ;
+}
+
+.Cards:hover {
+    background-color: var(--hover);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.Cards:hover .add{
+    transform: scale(1.8);
+    cursor: pointer;
+}
+.Cards:hover .delete{
+    transform: scale(1.3);
+    cursor: pointer;
 }
