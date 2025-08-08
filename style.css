@@ -19,7 +19,7 @@ main {
     --rose: #86615C;
     --lion: #b28e2c;
     --hover: #958e5f67;
-    --hover2:#b30000;
+    --hover2: #b30000;
 }
 
 main {
@@ -114,7 +114,6 @@ header .mainColor {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
 }
 
 .addCard button {
@@ -126,14 +125,15 @@ header .mainColor {
     transition: transform 0.3s ease;
 }
 
-.add{
+.add {
     font-weight: 700;
     padding-left: 0.2rem;
     transform: scale(1.5);
 }
-.delete{
+
+.delete {
     padding-right: 0.2rem;
-    font-weight:600 ;
+    font-weight: 600;
 }
 
 .Cards:hover {
@@ -141,12 +141,86 @@ header .mainColor {
     border-radius: 8px;
     cursor: pointer;
 }
-.Cards:hover .add{
+
+.Cards:hover .add {
     transform: scale(1.8);
     cursor: pointer;
 }
-.Cards:hover .delete{
+
+.Cards:hover .delete {
     transform: scale(1.3);
     color: var(--hover2);
     cursor: pointer;
+}
+
+.inputBox {
+    height: calc(100vh - 5rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:var(--charcolBlack); */
+}
+
+.inputBox .input-container {
+    height: 50%;
+    width: 40%;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.input-container .Input {
+    height: 100%;
+    width: 80%;
+}
+
+.Title {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: transparent;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    backdrop-filter: blur(100px);
+    border: none;
+    color: var(--primaryColor);
+}
+
+.Title::selection {
+    border: 3px solid var(--primaryColor);
+}
+
+
+.Discription {
+    height: calc(85%);
+    width: 100%;
+    font-weight: bold;
+    padding-left: 0.7rem;
+    border: none;
+    background-color: transparent;
+    color: var(--primaryColor);
+    border-bottom-left-radius: 10px;
+}
+
+.Discription::selection {
+    border: 3px solid var(--primaryColor);
+}
+
+
+.Input-box-color {
+    height: 100%;
+    width: 20%;
+    background-color:var(--primaryColor);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid var(--charcolBlack);
+    border-top: 1px solid var(--charcolBlack);
+    border-bottom: 1px solid var(--charcolBlack);
+}
+
+.Input-box-color .inputBoxColor{
+    height: 25%;
+    width: 100%;
+    /* background-color: #0D1321; */
 }
